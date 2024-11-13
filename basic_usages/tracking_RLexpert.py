@@ -24,7 +24,7 @@ from imitation.data import types
 
 SEED = 0
 # Option A: use the `make_vec_env` helper function - make sure to pass `post_wrappers=[lambda env, _: RolloutInfoWrapper(env)]`
-# env = gym.make('imitation_learning.trackingEnv.env.TrackingEnv:TrackEnv-v0')
+# env = gym.make('trackingEnv.env.TrackingEnv:TrackEnv-v0')
 venv = make_vec_env(
     "trackingEnv.env.TrackingEnv:TrackEnv-v0",
     rng=np.random.default_rng(),# 作为随机种子作用于环境
